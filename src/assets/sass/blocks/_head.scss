@@ -1,0 +1,93 @@
+@import 'vars';
+
+header{
+  background-color: #ffffff;
+  padding-top: 10px;
+    .header{
+      &_top{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 15px;
+        &_left{
+          a{
+            font-size: 45px;
+            color: #555555;
+            span{
+              color: #4CAF50;
+            }
+            &:hover{
+              color: #4CAF50;
+              transition: all ease 0.3s;
+            }
+          }
+        }
+        &_right{
+          display: flex;
+          align-items: center;
+          p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            letter-spacing: 4px;
+          }
+          .btn{
+            margin-left: 20px;
+            border-radius: 5px;
+            padding: 8px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: 0;
+            font-size: 18px;
+            &:hover{
+              background-color: #3d8d40;
+              transition: all ease 0.3s;
+            }
+          }
+        }
+      }
+      &_bottom{
+        padding: 0px 5px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #4CAF50;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+        &_left{
+          .list{
+            display: flex;
+            li{ 
+              margin-top: 20px;
+              margin-bottom: 20px;
+              :hover{
+                background-color: #fff;
+                color: #000;
+                transition: all ease 0.3s;
+              }
+              :focus{
+                background-color: #fff;
+                color: #000;
+              }
+              a{
+                padding: 20px; 
+                color: #fff;
+              }
+            }
+          }
+        }
+        &_right{
+          display: flex;
+          align-items: center;
+          button{
+            margin-right: 20px;
+            border: 0;  
+            background-color: unset;
+            :hover{
+              filter: invert(1);
+            }
+            img{
+              width: 32px;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+}
