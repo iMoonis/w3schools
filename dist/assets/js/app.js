@@ -15,17 +15,7 @@ var jsArea = document.querySelector('.js__slider__right__example__area')
 var jsEx = document.querySelector('.js__slider__right__example')
 var pythonSlider = document.querySelector('.python__slider')
 var scrollBtn = document.querySelector('.scrollBtn')
-// btn.addEventListener('click',function() {
-//     btn.classList.toggle = 'on'
-//     if (body.classList.contains("on")) {
-//         btn.style.backgroundColor = '#fff'
-//     } else{
-//         body.style.backgroundColor = '#181a1b'
-//     }
-    
-//     body.style.color = '#fff'
-//     
-// })
+
 
 function myFunction() {
     var btn = document.querySelector('.darkMode')
@@ -74,7 +64,16 @@ function myFunction() {
     }
 }
 
+var btns = document.querySelectorAll('.header_bottom_left button.btn')
+
+btns.forEach(item => {
+    item.addEventListener('click',()=>{
+        item.classList.toggle('show')
+    })
+})
+
+
 function scrollFast() {
     console.log('hereee');
     window.scrollTo({ top: 0, behavior: 'smooth' })
-}
+} 

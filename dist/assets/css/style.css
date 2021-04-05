@@ -6,9 +6,12 @@ header {
 }
 
 header .header_top {
-    display: flex;
-    justify-content: space-between;
     padding: 0px 15px;
+    width: 100%;
+}
+
+header .header_top_left {
+    float: left;
 }
 
 header .header_top_left a {
@@ -27,6 +30,7 @@ header .header_top_left a:hover {
 }
 
 header .header_top_right {
+    float: right;
     display: flex;
     align-items: center;
 }
@@ -54,6 +58,7 @@ header .header_top_right button:hover {
 }
 
 header .header_bottom {
+    width: 100%;
     padding: 0px 5px;
     display: flex;
     justify-content: space-between;
@@ -73,6 +78,11 @@ header .header_bottom_left .list li .btn {
     padding: 20px;
     color: #fff;
     float: left;
+}
+
+header .header_bottom_left .list li .btn .triangle__img {
+    width: 20px;
+    margin-left: 10px;
 }
 
 header .header_bottom_left .list li .btn:hover {
