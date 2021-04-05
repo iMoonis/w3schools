@@ -7,7 +7,9 @@ body,*{
   box-sizing: border-box;
 }
 
-
+html{
+  scroll-behavior: smooth;
+}
 
 @font-face{
   font-family: 'recursive';
@@ -365,16 +367,90 @@ textarea:focus{
 
 .scroll{
   .scrollBtn{
+    transition: all ease 0.3s;
     border: 0;
     background-color: #4caf50;
     border-radius: 50%;
     padding: 15px;
-    box-shadow: 0px 0px 20px 5px #444444;
+    box-shadow: 0px 0px 15px 7px #4caf5059;
     position: fixed;
-    bottom: 50px;
+    bottom: -100px;
     right: 50px;
     img{
       width: 50px;
+    }
+  }
+}
+
+body.night{
+  background-color: #181a1b;
+  header{
+    background-color: #181a1b;
+    color: rgb(232, 230, 227);
+  }
+  .mainTitle{
+    color: #B2ACA2;
+  }
+  .html__slider__right__example{
+    background-color: #202324;
+    color: rgb(232, 230, 227);
+  }
+  .html__slider__left{
+    color: rgb(232, 230, 227);
+  }
+  .html__slider__right__example__area{
+    background-color: #181a1b;
+  }
+  .bgc{
+    background-color: #202324;
+  }
+  .css__slider__right{
+    color: rgb(232, 230, 227);
+  }
+  .css__slider__left__example__area{
+    background-color: #181a1b;
+    color: rgb(232, 230, 227);
+  }
+  .css__slider__left__example__title{
+    color: rgb(232, 230, 227);
+  }
+  .js__slider__left{
+    color: rgb(232, 230, 227);
+  }
+  .js__slider__right__example__title{
+    color: rgb(232, 230, 227);
+  }
+  .js__slider__right__example{
+    background-color: #202324;
+  }
+  .js__slider__right__example__area{
+    background-color: #181a1b;
+    color: #fff;
+  }
+  .python{
+    .container{
+      .python__slider{
+        background-color: #202324;
+        color: rgb(232, 230, 227);
+      }
+    }
+  }
+  .header{
+    .header_bottom{
+      &_left{
+        .list{
+          li{
+            .down__modal.show{
+              background-color: #202324;
+              .down__modal__block{
+                &__text{
+                  color: rgb(232, 230, 227);
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

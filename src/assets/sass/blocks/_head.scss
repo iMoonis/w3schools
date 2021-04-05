@@ -51,29 +51,46 @@ header{
       }
       &_bottom{
         width: 100%;
-        padding: 0px 5px;
         display: flex;
         justify-content: space-between;
         background-color: #4CAF50;
         box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
         &_left{
+          float: left;
           .list{
-            display: flex;
             li{
+              position: relative;
+              float: left;
+              &:nth-child(2){
+                .down__modal.show{
+                  left: -160px;
+                  
+                }
+              }
+              &:nth-child(3){
+                .down__modal.show{
+                  left: -331px;
+                }
+              }
+              &:nth-child(4){
+                .down__modal.show{
+                  left: -480px;
+                }
+              }
+              &:nth-child(5){
+                .down__modal.show{
+                  left: -640px;
+                }
+              }
               .btn{
+                background-color: #4CAF50;
                 font-family: 'recursive';
                 font-size: 18px;
                 border: 0;
-                background: 0;
-                padding: 20px; 
+                padding: 20px;
                 color: #fff;
                 float: left;
-                .triangle{
-                  &__img{
-                    width: 20px;
-                    margin-left: 10px;
-                  }
-                }
+                width: 100%;
                 &:hover{
                   background-color: #fff;
                   color: #000;
@@ -87,12 +104,13 @@ header{
                   color: #000;
                   .triangle__img{
                     filter: invert(1);
+                    transition: all ease 0.3s;
                   }
                 }
                 .triangle{
                   float: right;
                   &__img{
-                    width: 20px;
+                    width: 15px;
                     height: auto;
                     margin-left: 10px;
                     &:hover{
@@ -101,15 +119,45 @@ header{
                   }
                 }
               }
-              .btn dsad{
-
+              .btn.show{
+                .triangle{
+                  .triangle__img{
+                    transform: rotate(180deg);
+                  }
+                }
+              }
+              .down__modal{
+                transition: all ease 0.3s;
+                background-color: #f1f1f1;
+                padding: 40px 20px;
+                display: none;
+                position: absolute;
+                width: 100vw;
+                top: 61px;
+                box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+                &__block{
+                  float: left;
+                  margin-right: 90px;
+                  &__title{
+                    font-size: 28px;
+                    font-weight: bold;
+                  }
+                  &__text{
+                    display: block;
+                    margin-top: 15px;
+                    font-size: 20px;
+                  }
+                }
+              }
+              .down__modal.show{
+                display: block;
               }
             }
           }
         }
         &_right{
-          display: flex;
-          align-items: center;
+          float: right;
+          margin-top: 15px;
           button{
             margin-right: 20px;
             border: 0;  
