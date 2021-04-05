@@ -10,7 +10,7 @@
     <header>
       <div class="header">
         <div class="header_top">
-          <div class="header_top_left"> <a href="#">w3schools<span>.com</span></a></div>
+          <div class="header_top_left"> <a class="mainTitle" href="#">w3schools<span>.com</span></a></div>
           <div class="header_top_right">
             <p>THE WORLD'S LARGEST WEB DEVELOPER SITE</p>
             <button class="btn">LOG IN</button>
@@ -19,15 +19,35 @@
         <div class="header_bottom">
           <div class="header_bottom_left">
             <ul class="list">
-              <li><a href="#">HOME </a></li>
-              <li> <a href="#"> HTML</a></li>
-              <li> <a href="#"> CSS</a></li>
-              <li> <a href="#"> JAVASCRIPT</a></li>
-              <li> <a href="#"> PYTHON</a></li>
+              <li>
+                <button class="btn"> HOME 
+                  <div class="triangle"> </div>
+                </button>
+              </li>
+              <li> 
+                <button class="btn">HTML
+                  <div class="triangle"> </div>
+                </button>
+              </li>
+              <li> 
+                <button class="btn">  CSS
+                  <div class="triangle"> </div>
+                </button>
+              </li>
+              <li> 
+                <button class="btn">  JAVASCRIPT
+                  <div class="triangle"> </div>
+                </button>
+              </li>
+              <li> 
+                <button class="btn">  PYTHON
+                  <div class="triangle"> </div>
+                </button>
+              </li>
             </ul>
           </div>
           <div class="header_bottom_right">
-            <button><img src="../assets/img/adjust-contrast.png" alt=""/></button>
+            <button class="darkMode" onclick="myFunction()"><img src="../assets/img/adjust-contrast.png" alt=""/></button>
             <button><img src="../assets/img/worldwide.png" alt=""/></button>
             <button><img src="../assets/img/search.png" alt=""/></button>
           </div>
@@ -38,7 +58,7 @@
       <div class="html__slider">
         <div class="html__slider__left">
           <div class="html__slider__left__title">HTML</div>
-          <div class="html__slider__left__text">Web-sahifalarni yaratish uchun til</div>
+          <div class="html__slider__left__text">The language for building web pages</div>
           <div class="html__slider__left__links"> <a class="link__left" href="#">HTMLni o'rganish </a><a class="link__right" href="#">HTML havolalari</a></div>
         </div>
         <div class="html__slider__right">
@@ -57,21 +77,101 @@
             </div>
           </div>
         </div>
-      </div><br/><br/>
-      <div class="css__slider">
-        <div class="some">
-          <div class="css__slider__left"> </div>
-          <div class="css__slider__left__example"> 
-            <div class="css__slider__left__example__title">CCSga misol: </div>
-            <div class="css__slider__left__example__area"></div>
-          </div>
-        </div>
+      </div>
+      <div class="clear"> </div>
+      <div class="css__slider"></div>
+    </div>
+    <div class="bgc">
+      <div class="container">
         <div class="css__slider__right"> 
           <div class="css__slider__right__title">CSS</div>
-          <div class="css__slider__right__text">Web-sahifalarni yaratish uchun til</div>
-          <div class="css__slider__right__links"> <a class="link__left" href="#">HTMLni o'rganish </a><a class="link__right" href="#">HTML havolalari</a></div>
+          <div class="css__slider__right__text">The language for styling web pages</div>
+          <div class="css__slider__right__links"> <a class="link__left" href="#">CSSni o'rganish </a><a class="link__right" href="#">CSS havolalari</a></div>
+        </div>
+        <div class="css__slider__left"> 
+          <div class="css__slider__left__example"> 
+            <div class="css__slider__left__example__title">CCSga misol: </div>
+            <div class="css__slider__left__example__area">
+              <div class="top"> <span class="attribute">body</span>
+                <div class="text">{</div><br/>
+                <div class="red">background-color</div>
+                <div class="text">:</div>
+                <div class="tri">lightblue </div>
+                <div class="text">;</div><br/>
+                <div class="text">}</div><br/><br/>
+              </div>
+              <div class="mid"><span class="attribute">h1</span>
+                <div class="text">{</div><br/>
+                <div class="red">color</div>
+                <div class="text">:</div>
+                <div class="tri">white </div>
+                <div class="text">;</div><br/>
+                <div class="red">text-align</div>
+                <div class="text">:</div>
+                <div class="tri">center</div><br/>
+                <div class="text">}</div><br/><br/>
+              </div>
+              <div class="bot"><span class="attribute">p</span>
+                <div class="text">{</div><br/>
+                <div class="red">font-family</div>
+                <div class="text">:</div>
+                <div class="tri">verdana</div>
+                <div class="text">;</div><br/>
+                <div class="red">font-size</div>
+                <div class="text">:</div>
+                <div class="tri">20px</div><br/>
+                <div class="text">}</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <div class="container">
+      <div class="js__slider">
+        <div class="js__slider__left">
+          <div class="js__slider__left__title">JavaScript</div>
+          <div class="js__slider__left__text">The language for programming web pages</div>
+          <div class="js__slider__left__links"> <a class="link__left" href="#">JavaScriptni o'rganish </a><a class="link__right" href="#">JavaScript havolalari</a></div>
+        </div>
+        <div class="js__slider__right">
+          <div class="js__slider__right__example">
+            <div class="js__slider__right__example__title">JavaScriptga misol:</div>
+            <div class="js__slider__right__example__area">
+              <div class="top"><span class="tri"><</span><span class="attribute">button </span><span class="red">onclick </span><span class="tri">="myFunction()"</span><span class="tri">></span>
+                <div class="text">Click Me! </div><span class="tri"><</span><span class="attribute">/button</span><span class="tri">></span><br/><br/>
+              </div>
+              <div class="bot"> <span class="tri"><</span><span class="attribute">script</span><span class="tri">></span><br/>
+                <div class="bot__extra"> <span class="tri">function </span><span class="text">myFunction() {</span><br/><span class="tri">var</span>
+                  <div class="text">x = document.getElementById(</div><span class="attribute">"demo" </span>
+                  <div class="text">);</div><br/>
+                  <div class="text">x.style.fontSize = </div><span class="attribute">"25px"</span>
+                  <div class="text">; </div><br/>
+                  <div class="text">x.style.color = </div><span class="attribute">"red"</span>
+                  <div class="text">;</div><br/>
+                  <div class="text">}</div>
+                </div><br/>
+                <div class="tri"><</div><span class="attribute">/script</span>
+                <div class="tri">></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="python">
+      <div class="container"> 
+        <div class="python__slider"> 
+          <div class="python__slider__title">Python</div>
+          <div class="python__slider__text">A programming language </div>
+          <div class="python__slider__link"> <a href="#">LEARN PYTHON </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll">
+      <button class="scrollBtn" onclick="scrollFast"><img src="assets/img/up-arrow.png" alt=""/></button>
+    </div>
   </body>
+  <script src="assets/js/app.js"></script>
 </html>

@@ -2,7 +2,7 @@ header
     .header
         .header_top
             .header_top_left 
-                a(href="#") w3schools
+                a(href="#").mainTitle w3schools
                     span .com
             .header_top_right
                 p THE WORLD'S LARGEST WEB DEVELOPER SITE
@@ -11,17 +11,22 @@ header
             .header_bottom_left
                 ul.list
                     li
-                        a(href="#") HOME 
+                        button.btn  HOME 
+                            .triangle 
                     li 
-                        a(href="#")  HTML
+                        button.btn HTML
+                            .triangle 
                     li 
-                        a(href="#")  CSS
+                        button.btn   CSS
+                            .triangle 
                     li 
-                        a(href="#")  JAVASCRIPT
+                        button.btn   JAVASCRIPT
+                            .triangle 
                     li 
-                        a(href="#")  PYTHON
+                        button.btn   PYTHON
+                            .triangle 
             .header_bottom_right
-                button
+                button.darkMode(onclick="myFunction()")
                     img(src="../assets/img/adjust-contrast.png", alt="")
                 button
                     img(src="../assets/img/worldwide.png", alt="")

@@ -5,7 +5,7 @@ block content
         .html__slider
             .html__slider__left
                 .html__slider__left__title HTML
-                .html__slider__left__text Web-sahifalarni yaratish uchun til
+                .html__slider__left__text The language for building web pages
                 .html__slider__left__links 
                     a(href="#").link__left HTMLni o'rganish 
                     a(href="#").link__right HTML havolalari
@@ -62,18 +62,123 @@ block content
                             span.tri <
                             span.attribute /html
                             span.tri >
-        br
-        br
+        .clear 
+
         .css__slider
-            .some
-                .css__slider__left 
+    .bgc
+        .container
+            .css__slider__right 
+                .css__slider__right__title CSS
+                .css__slider__right__text The language for styling web pages
+                .css__slider__right__links 
+                    a(href="#").link__left CSSni o'rganish 
+                    a(href="#").link__right CSS havolalari
+            .css__slider__left 
                 .css__slider__left__example 
                     .css__slider__left__example__title CCSga misol: 
                     .css__slider__left__example__area
-            .css__slider__right 
-                .css__slider__right__title CSS
-                .css__slider__right__text Web-sahifalarni yaratish uchun til
-                .css__slider__right__links 
-                    a(href="#").link__left HTMLni o'rganish 
-                    a(href="#").link__right HTML havolalari
+                        .top 
+                            span.attribute body
+                            .text {
+                            br
+                            .red background-color
+                            .text :
+                            .tri lightblue 
+                            .text ;
+                            br
+                            .text }
+                            br
+                            br
+                        .mid
+                            span.attribute h1
+                            .text {
+                            br
+                            .red color
+                            .text :
+                            .tri white 
+                            .text ;
+                            br
+                            .red text-align
+                            .text :
+                            .tri center
+                            br
+                            .text }
+                            br 
+                            br
+                        .bot
+                            span.attribute p
+                            .text {
+                            br
+                            .red font-family
+                            .text :
+                            .tri verdana
+                            .text ;
+                            br
+                            .red font-size
+                            .text :
+                            .tri 20px
+                            br
+                            .text }
 
+    .container
+        .js__slider
+            .js__slider__left
+                .js__slider__left__title JavaScript
+                .js__slider__left__text The language for programming web pages
+                .js__slider__left__links 
+                    a(href="#").link__left JavaScriptni o'rganish 
+                    a(href="#").link__right JavaScript havolalari
+            .js__slider__right
+                .js__slider__right__example
+                    .js__slider__right__example__title JavaScriptga misol:
+                    .js__slider__right__example__area
+                        .top
+                            span.tri <
+                            span.attribute button 
+                            span.red onclick 
+                            span.tri ="myFunction()"
+                            span.tri >
+                            .text Click Me! 
+                            span.tri <
+                            span.attribute /button
+                            span.tri >
+                            br
+                            br
+                        .bot 
+                            span.tri <
+                            span.attribute script
+                            span.tri >
+                            br
+                            .bot__extra 
+                                span.tri function 
+                                span.text myFunction() {
+                                br
+                                span.tri var
+                                .text x = document.getElementById(
+                                span.attribute "demo" 
+                                .text );
+                                br
+                                .text x.style.fontSize = 
+                                span.attribute "25px"
+                                .text ; 
+                                br
+                                .text x.style.color = 
+                                span.attribute "red"
+                                .text ;
+                                br
+                                .text }
+                            br
+                            .tri <
+                            span.attribute /script
+                            .tri >
+        .clear
+    .python
+        .container 
+            .python__slider 
+                .python__slider__title Python
+                .python__slider__text A programming language 
+                .python__slider__link 
+                    a(href="#") LEARN PYTHON 
+    .scroll
+        button.scrollBtn(onclick="scrollFast")
+            img(src="assets/img/up-arrow.png", alt="")
